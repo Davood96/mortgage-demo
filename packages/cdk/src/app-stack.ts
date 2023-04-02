@@ -35,10 +35,7 @@ export class AppStack extends cdk.Stack {
     });
 
     new s3Deployment.BucketDeployment(this, "deployStaticWebsite", {
-      sources: [
-        s3Deployment.Source.asset("../front-end/dist"),
-        s3Deployment.Source.jsonData("config.json", { apiUrl: api.url }),
-      ],
+      sources: [s3Deployment.Source.asset("../front-end/dist")],
       destinationBucket: myBucket,
     });
   }

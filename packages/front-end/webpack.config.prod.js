@@ -1,7 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { DefinePlugin } = require("webpack");
 
 module.exports = {
+  mode: "production",
   entry: "./src/index.tsx",
   output: {
     filename: "index.js",
@@ -25,13 +27,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "index.html"),
     }),
+    new DefinePlugin({
+      API_URL: "'https://dwdlsymvn7.execute-api.us-west-2.amazonaws.com'",
+    }),
   ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
-    host: "localhost",
-    port: 8080,
-    hot: true,
-  },
 };
