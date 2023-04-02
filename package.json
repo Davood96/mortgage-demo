@@ -1,0 +1,15 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "lerna --concurrency=1 run test",
+    "build": "lerna --concurrency=1 run build",
+    "install": "lerna bootstrap --concurrency=1",
+    "install:prod": "lerna bootstrap --concurrency=1 -- --production --frozen-lockfile"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  },
+  "dependencies": {}
+}

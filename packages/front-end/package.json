@@ -1,0 +1,36 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack",
+    "test": "echo \"No Tests yet\""
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.8",
+    "@types/node-fetch": "^2.6.2",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "dependencies": {
+    "find-up": "^6.3.0",
+    "formik": "^2.2.9",
+    "node-fetch": "^2.6.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
