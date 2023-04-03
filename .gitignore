@@ -3,3 +3,5 @@ dist
 dist-lambda
 cdk.out
 **/*.log
+reports
+coverage

@@ -6,7 +6,6 @@
     "start": "lerna run start",
     "test": "lerna --concurrency=1 run test",
     "build": "lerna --concurrency=1 run build",
-    "bundle": "lerna --concurrency=1 run bundle",
     "install": "lerna bootstrap --concurrency=1",
     "install:prod": "lerna bootstrap --concurrency=1 -- --production --frozen-lockfile"
   },

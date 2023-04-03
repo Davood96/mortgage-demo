@@ -1,3 +1,6 @@
+#!/usr/bin/env ts-node
+// istanbul ignore file
+
 import app from "./app";
 
 const PORT = 3000;
